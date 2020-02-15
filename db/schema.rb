@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_19_073352) do
+ActiveRecord::Schema.define(version: 2020_02_15_121218) do
 
   create_table "test_models", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name_text"
@@ -36,6 +36,7 @@ ActiveRecord::Schema.define(version: 2020_01_19_073352) do
     t.integer "bake"
     t.integer "cheese3"
     t.integer "cheese6"
+    t.integer "satisfied"
   end
 
 end
