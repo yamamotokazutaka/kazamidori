@@ -1,0 +1,10 @@
+.answer{
+  width:1000px;
+  height: 50px;
+  background-color:blue;
+  .answer-child{
+    width:50px;
+    height: 50px;
+    background-color:red;
+  }
+}

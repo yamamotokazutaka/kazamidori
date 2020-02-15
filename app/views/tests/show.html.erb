@@ -1,0 +1,43 @@
+<div class="answer">
+  <div class="answer-child">
+  </div>
+</div>
+
+<% @tests.each do |test| %>
+  <%= test.item %>
+  <%= test.isbought %>
+  <%= test.other %>
+  <% if test.catalog  == 1%>
+    <span>〇</span>
+  <%else%>
+    <span>×</span>
+  <%end%>
+  <%= test.furigana %>
+  <%= test.name %>
+  <%= test.gender %>
+  <%= test.age%>
+  <%= test.postnumber %>
+  <%= test.address %>
+  <%= test.tel %>
+  <%= test.mail %>
+  <% if test.bake == 1%>
+    <span>〇</span>
+  <%else%>
+    <span>×</span>
+  <%end%>
+  <% if test.cheese3 == 1%>
+    <span>〇</span>
+  <%else%>
+    <span>×</span>
+  <%end%>
+  <% if test.cheese6 == 1%>
+    <span>〇</span>
+  <%else%>
+    <span>×</span>
+  <%end%>
+  <%= test.satisfied%>
+  <br>
+<% end %>
+<%= link_to "トップページ", root_path%>
+<%= link_to "Excel出力", test_path(@tests, format: :xlsx) %>
+
