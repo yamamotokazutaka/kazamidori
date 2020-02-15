@@ -58,3 +58,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'axlsx'
 gem 'zip-zip'
 gem 'rubyzip', '= 1.1.0'
+gem 'sqlite3', group: [:development, :test]
+gem 'pg', group: :production
