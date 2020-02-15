@@ -10,33 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_02_15_121218) do
+ActiveRecord::Schema.define(version: 2020_02_15_123556) do
 
   create_table "test_models", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "name_text"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "tests", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "item"
-    t.integer "isbought"
-    t.string "other"
-    t.integer "catalog"
-    t.string "furigana"
-    t.string "gender"
-    t.integer "age"
-    t.integer "postnumber"
-    t.string "address"
-    t.integer "tel"
-    t.string "mail"
-    t.integer "bake"
-    t.integer "cheese3"
-    t.integer "cheese6"
-    t.integer "satisfied"
   end
 
 end
